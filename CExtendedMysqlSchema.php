@@ -5,6 +5,7 @@ class CExtendedMysqlSchema extends CMysqlSchema
 {
 	/**
 	 * Collects the foreign key column details for the given table.
+	 * Extended functionality: gets table engine type from SHOW CREATE TABLE query.
 	 * @param CExtendedMysqlTableSchema $table the table metadata
 	 */
 	protected function findConstraints($table)
