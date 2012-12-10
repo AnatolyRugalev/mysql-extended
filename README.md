@@ -1,4 +1,14 @@
 Yii Mysql Extended Schema
 ====================================
 
-Coming soon.
+Simple usage:
+
+in db config:
+```php
+    'db' => array(
+        'connectionString' => 'mysql:etc',
+        'driverMap' => array(
+            'mysql' => 'ext.MysqlExtended.CMysqlExtendedSchema',
+        ),
+    )
+```
